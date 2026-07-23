@@ -329,7 +329,7 @@ const ITINERARIES: Itinerary[] = [
         { time: 'Sáng', activity: 'Thuê xe máy đi Thác Bản Giốc (~80km)', note: 'Đường đẹp, đi ~2.5h' },
         { time: 'Trưa', activity: 'Tham quan Thác Bản Giốc, đi thuyền sát chân thác', note: 'Vé ~45k, thuyền ~30k' },
         { time: 'Chiều', activity: 'Động Ngườm Ngao — hang động khổng lồ', note: 'Vé ~40k, rất đẹp' },
-        { time: 'Tối', activity: 'Về TP Cao Bằng nghỉ ngơi', note: 'Mua lạp xường hun khói làm quà' },
+        { time: 'Tối', activity: 'Về TP Cao Bằng nghỉ ngơi', note: 'Mua lạp xưởng hun khói làm quà' },
       ]},
       { day: 'Ngày 3 — Cao Bằng → Lạng Sơn', items: [
         { time: 'Sáng', activity: 'Khu di tích Pác Bó (nơi Bác Hồ ở)', note: 'Cách TP ~50km' },
@@ -344,7 +344,7 @@ const ITINERARIES: Itinerary[] = [
       ]},
     ],
     tips: ['Mang theo áo ấm vùng cao', 'Thuê xe máy để chủ động', 'Thác Bản Giốc đẹp nhất mùa nước (T6-T9)', 'Đồ ăn Đông Bắc rất ngon và rẻ'],
-    foods: ['Phở chua', 'Vịt quay Lạng Sơn', 'Khau nhục', 'Bánh cuốn trứng', 'Lạp xường hun khói'],
+    foods: ['Phở chua', 'Vịt quay Lạng Sơn', 'Khau nhục', 'Bánh cuốn trứng', 'Lạp xưởng hun khói'],
     costs: [
       { name: 'Xe khách HN→Cao Bằng', amount: 300000, category: 'transport' },
       { name: 'Xe khách CB→Lạng Sơn', amount: 150000, category: 'transport' },
@@ -641,12 +641,6 @@ export default function HomeView({ onNavigate, onSelectProvince, onApplyItinerar
       <footer className="bg-slate-950 py-8 text-center">
         <p className="text-slate-500 text-sm">Vietnam Travel Planner v2.0</p>
         <p className="text-slate-600 text-xs mt-2">Dữ liệu tham khảo. Giá cả có thể thay đổi theo thời điểm.</p>
-        <button
-          onClick={() => onNavigate('download')}
-          className="mt-4 px-5 py-2.5 bg-green-600 hover:bg-green-500 text-white text-sm font-semibold rounded-xl transition-colors"
-        >
-          Tải Source Code về máy
-        </button>
       </footer>
     </div>
   );
